@@ -21,3 +21,5 @@ RUN pip install -r requirements.txt \
     && python populator.py 
 
 EXPOSE 5000
+
+CMD python itemcatalog.py
