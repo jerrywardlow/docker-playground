@@ -1,4 +1,6 @@
-FROM python:2.7
+FROM alpine:latest
+
+RUN apk update && apk add python py-pip
 
 WORKDIR /app
 
