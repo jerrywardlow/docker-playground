@@ -2,6 +2,8 @@
 
 web:
     image: jerrywardlow/vanilla
+    links:
+        - db:database
 
 db:
     image: mysql:5.7
