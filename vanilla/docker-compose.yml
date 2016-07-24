@@ -1,0 +1,7 @@
+---
+
+web:
+    image: jerrywardlow/vanilla
+
+db:
+    image: mysql:5.7
