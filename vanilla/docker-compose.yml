@@ -4,6 +4,8 @@ web:
     image: jerrywardlow/vanilla
     links:
         - db:database
+    ports:
+        - "6680:80"
 
 db:
     image: mysql:5.7
