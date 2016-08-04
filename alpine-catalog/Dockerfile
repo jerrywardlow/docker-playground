@@ -6,7 +6,6 @@ RUN apk update \
                py-pip \
                sqlite \
     && git clone http://github.com/jerrywardlow/p3catalog \
-    && apk del git \
     && mkdir /itemcatalog \
     && mv /p3catalog/app/* /itemcatalog \
     && rm -rf /p3catalog \
