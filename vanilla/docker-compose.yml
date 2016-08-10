@@ -13,5 +13,7 @@ db:
     ports:
         - "3306:3306"
     environment:
-        MYSQL_ROOT_PASSWORD: vanillapassword
+        MYSQL_ROOT_PASSWORD: secretrootpassword
+        MYSQL_USER: vanilla
+        MYSQL_PASSWORD: secretdbpassword
         MYSQL_DATABASE: vanilladb
