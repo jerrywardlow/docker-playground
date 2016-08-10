@@ -3,10 +3,10 @@
 web:
     build: .
     image: vanilla
-    depends_on:
-        - db:database
     ports:
         - "6680:80"
+    depends_on:
+        - db:database
 
 db:
     image: mysql:5.7
