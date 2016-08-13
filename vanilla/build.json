@@ -1,6 +1,6 @@
 {
   "variables": {
-    "playbook_vars": "vars/default.yml"
+    "playbook": "playbook.yml"
   },
   "builders": [
     {
@@ -20,7 +20,7 @@
     },
     {
       "type": "ansible-local",
-      "playbook_file": "playbook.yml"
+      "playbook_file": "{{user `playbook`}}"
     }
   ]
 }
