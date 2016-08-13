@@ -1,6 +1,6 @@
 {
   "variables": {
-    "playbook": "playbook.yml"
+    "playbook": "ansible/playbook.yml"
   },
   "builders": [
     {
