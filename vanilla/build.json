@@ -19,11 +19,6 @@
       ]
     },
     {
-      "type": "file",
-      "source": "{{user `playbook_vars`}}",
-      "destination":  "/tmp/vars.yml"
-    },
-    {
       "type": "ansible-local",
       "playbook_file": "playbook.yml"
     }
