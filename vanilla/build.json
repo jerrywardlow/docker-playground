@@ -28,6 +28,7 @@
       "type": "docker-import",
       "repository": "jerrywardlow/vanilla",
       "tag": "ansible"
-    }
+    },
+    "docker-push"
   ]
 }
