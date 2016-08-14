@@ -1,8 +1,7 @@
 ---
 
 web:
-    build: .
-    image: vanilla
+    image: jerrywardlow/vanilla
     ports:
         - "6680:80"
     depends_on:
