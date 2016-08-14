@@ -22,5 +22,12 @@
       "type": "ansible-local",
       "playbook_file": "{{user `playbook`}}"
     }
+  ],
+  "post-processors": [
+    {
+      "type": "docker-import",
+      "repository": "jerrywardlow/vanilla",
+      "tag": "ansible"
+    }
   ]
 }
