@@ -11,6 +11,9 @@ wordpress_db:
     image: mariadb
     environment:
         MYSQL_ROOT_PASSWORD: supersecretpassword
+        MYSQL_DATABASE: wordpress
+        MYSQL_USER: wordpress
+        MYSQL_PASSWORD: wordpress
 
 phpmyadmin:
     image: corbinu/docker-phpmyadmin
