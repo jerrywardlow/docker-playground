@@ -19,11 +19,10 @@ wordpress_db:
         MYSQL_PASSWORD: wordpress
 
 phpmyadmin:
-    image: corbinu/docker-phpmyadmin
+    image: phpmyadmin/phpmyadmin  
     links:
         - wordpress_db:mysql
     ports:
         - 8081:80
     environment:
-        MYSQL_USERNAME: root
-        MYSQL_ROOT_PASSWORD: supersecretpassword
+        PMA_HOST: mysql
