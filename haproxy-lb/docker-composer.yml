@@ -12,3 +12,6 @@ services:
   lb:
     build: ./lb
     image: haproxy-lb:latests
+    depends_on:
+      - blog
+      - shop
