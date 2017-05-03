@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  blog:
+    build: ./blog
+    image: haproxy-blog:latest
+
+  shop:
+    build: ./shop
+    image: haproxy-shop:latest
+
+  lb:
+    build: ./lb
+    image: haproxy-lb:latests
