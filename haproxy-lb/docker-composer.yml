@@ -4,10 +4,14 @@ services:
   blog:
     build: ./blog
     image: haproxy-blog:latest
+    expose:
+      - "80"
 
   shop:
     build: ./shop
     image: haproxy-shop:latest
+    expose:
+      - "80"
 
   lb:
     build: ./lb
