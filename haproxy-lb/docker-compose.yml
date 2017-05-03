@@ -19,3 +19,6 @@ services:
     depends_on:
       - blog
       - shop
+    links:
+      - blog
+      - shop
