@@ -4,18 +4,21 @@ services:
   blog:
     build: ./blog
     image: haproxy-blog:latest
+    restart: always
     expose:
       - "80"
 
   shop:
     build: ./shop
     image: haproxy-shop:latest
+    restart: always
     expose:
       - "80"
 
   lb:
     build: ./lb
     image: haproxy-lb:latest
+    restart: always
     networks:
       default:
         ipv4_address: 172.168.56.78
