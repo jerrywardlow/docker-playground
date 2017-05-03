@@ -15,10 +15,18 @@ services:
 
   lb:
     build: ./lb
-    image: haproxy-lb:latests
+    image: haproxy-lb:latest
     depends_on:
       - blog
       - shop
     links:
       - blog
       - shop
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.168.56.0/24
