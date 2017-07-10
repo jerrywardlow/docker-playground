@@ -20,5 +20,4 @@ func main() {
     hoursLeft := hours%24
 
     fmt.Printf("\nHow long until the election?\n\n%v Days %v Hours %v Minutes %v Seconds\n\n", days, hoursLeft, minutes, seconds)
-    
 }
