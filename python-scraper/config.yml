@@ -1,0 +1,7 @@
+---
+
+mysql:
+  host: localhost
+  db: scraper
+  user: scraper
+  passwd: scraper
