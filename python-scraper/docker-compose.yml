@@ -11,6 +11,8 @@ services:
       MYSQL_DATABASE: scraper
       MYSQL_USER: scraper
       MYSQL_PASSWORD: scraper
+  app:
+    build: .
 
 volumes:
   db_data:
