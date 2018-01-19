@@ -3,16 +3,18 @@
 # Library for parsing YAML files
 import yaml
 
-# Threading library
-import threading
+from time import sleep
 
 # Open configuration file and read YAML contents
 with open('config.yml', 'r') as config_file:
     cfg = yaml.load(config_file)
 
 def cron_loop():
-    threading.Timer(10.0, cron_loop).start()
-    print "Placeholder for cron function"
+    '''Cron loop placeholder, never exits'''
+    while True:
+        print "Placeholder for cron function"
+        sleep(5)
 
 if __name__ == '__main__':
+    print "Placeholder for pre-cron functions"
     cron_loop()
