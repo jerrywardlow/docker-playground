@@ -1,5 +1,7 @@
 FROM python:2.7-alpine
 
+RUN apk add py-mysqldb
+
 WORKDIR /usr/src/app
 
 COPY requirements.txt ./
