@@ -5,3 +5,6 @@ mysql:
   db: scraper
   user: scraper
   passwd: scraper
+
+csv:
+  path: ./dump.csv
