@@ -7,6 +7,7 @@ WORKDIR /usr/src/app
 COPY requirements.txt ./
 COPY config.yml ./
 COPY scraper.py ./
+COPY dump.csv ./
 
 RUN pip install --no-cache-dir -r requirements.txt
 
